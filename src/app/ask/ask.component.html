@@ -14,10 +14,27 @@
     <td>{{ testResponse.descendants }}</td>
     <td>{{ testResponse.kids }}</td>
     <td>{{ testResponse.score }}</td>
-    <td>{{testResponse.title }} <br /> 
-        <textarea name="" id="" cols="30" rows="10" readonly="">{{ testResponse.text }}</textarea>
+    <td>{{testResponse.title }} <br />
+      <button type="button" class="btn btn-default btn-info" data-toggle="modal" data-target="#myModaltext">Text</button> 
     </td>
     <td>{{ testResponse.type }}</td>
     <td>{{ testResponse.url }}</td>
   </tr>
 </table>   
+<!-- Model -->  
+<div class="modal fade" id="myModaltext" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Job Description</h4>
+            </div>
+              
+            <div class="modal-body">
+                <div class="form-group">
+                    <textarea class="form-control" name="" id="" cols="60" rows="15">{{ testResponse.text }}</textarea>
+                 </div>
+            </div>
+        </div>
+    </div>    
+</div>

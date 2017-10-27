@@ -1,3 +1,11 @@
+.fa-y-combinator {
+	color: #F26522;
+}
+
+#footer-name:hover {
+	color: #F26522;		
+}
+
 .footer {
   position: static;
   bottom: 0;
@@ -13,6 +21,11 @@ ul.social-elements li {
 	display: inline-block;
 	font-style: none;
 	padding: 5px;
+
+	&:hover {
+		color: #F26522;
+		font-size: 1.2em;
+	}
 }
 
 .footer-links li{
@@ -20,4 +33,9 @@ ul.social-elements li {
 	font-size: 1.3em;
 	font-weight: 100;
 	margin:5px;
+
+	a {
+		color: #F26522;
+		text-decoration: none;
+	}
 }

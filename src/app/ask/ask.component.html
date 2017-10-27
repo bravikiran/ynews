@@ -1,0 +1,23 @@
+<table class="table table-striped table-hover">
+ <tr>
+  	<th>Author Name</th>
+  	<th>Descendants</th>
+  	<th>Kids</th>
+  	<th>Score</th>      	
+  	<th>Title and Text</th>
+  	<th>Type</th>
+  	<th>Url</th>      	
+  </tr>
+
+  <tr>
+    <td>{{ testResponse.by }}</td>
+    <td>{{ testResponse.descendants }}</td>
+    <td>{{ testResponse.kids }}</td>
+    <td>{{ testResponse.score }}</td>
+    <td>{{testResponse.title }} <br /> 
+        <textarea name="" id="" cols="30" rows="10" readonly="">{{ testResponse.text }}</textarea>
+    </td>
+    <td>{{ testResponse.type }}</td>
+    <td>{{ testResponse.url }}</td>
+  </tr>
+</table>   

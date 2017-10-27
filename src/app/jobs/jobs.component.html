@@ -1,0 +1,35 @@
+<table class="table table-striped">
+	<tr>
+		<th>Author Name</th>
+		<th>Job Title</th>
+		<th>Job Type</th>
+		<th>Url</th>
+		<th>Job Description</th>	
+	</tr>
+
+	<tr>
+		<td>{{ jobsData.by }}</td>
+		<td>{{ jobsData.title }}</td>
+		<td>{{ jobsData.type }}</td>
+		<td>{{ jobsData.url }}</td>
+		<td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModaldescription">Description</button></td>
+	</tr>
+       
+</table>
+ <!-- Model -->	
+<div class="modal fade" id="myModaldescription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Job Description</h4>
+            </div>
+              
+            <div class="modal-body">
+                <div class="form-group">
+                  	<textarea class="form-control" name="" id="" cols="60" rows="15">{{ jobsData.text }}</textarea>
+                 </div>
+            </div>
+        </div>
+    </div>		
+</div>

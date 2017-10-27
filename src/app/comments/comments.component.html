@@ -1,0 +1,24 @@
+
+<table class="table table-striped table-hover">
+    <tr>
+      	<th>Author Name</th>
+      	<th>Descendants </th>
+      	<th>Title</th>
+      	<th>Score </th>
+      	<th>Type</th>
+      	<th>Url</th>
+      	<th>Kids</th>
+    </tr>
+
+    <tr>
+    	<td>{{ testResponse.by }}</td>
+    	<td>{{ testResponse.descendants }}</td>
+    	<td>{{ testResponse.title }}</td>
+    	<td>{{ testResponse.score }}</td>
+    	<td>{{ testResponse.type }}</td>
+    	<td><button class="btn btn-default"><a href="{{ testResponse.url }}">URL Link</a></button></td>
+    	<td><button class="btn btn-info"><a href="{{ testResponse.kids }}">Comments</a></button></td>
+    </tr>
+</table>   
+
+
